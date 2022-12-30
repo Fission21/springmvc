@@ -11,6 +11,6 @@ import org.springframework.stereotype.Controller;
 
 // 第二种使用配置法来排除Controller
 @ComponentScan(value = "com.xm", excludeFilters = @ComponentScan.Filter
-        (type = FilterType.ANNOTATION,classes = Controller.class))
+        (type = FilterType.ANNOTATION, classes = Controller.class))
 public class SpringConfig {
 }

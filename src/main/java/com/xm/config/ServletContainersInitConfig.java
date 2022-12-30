@@ -1,10 +1,10 @@
 package com.xm.config;
 
 
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-import org.springframework.web.servlet.support.AbstractDispatcherServletInitializer;
+
+import javax.servlet.Filter;
 
 // 4，定义一个servlet 容器启动的配置类，在里面加载spring配置
 // 将配置类加载到tomcat容器
@@ -20,6 +20,14 @@ public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatc
 
     protected String[] getServletMappings() {
         return new String[]{"/"};
+    }
+
+    // 乱码处理
+    @Override
+    protected Filter[] getServletFilters() {
+        CharacterEncodingFilter filter = new CharacterEncodingFilter();
+        filter.setEncoding("UTF-8");
+        return new Filter[]{filter};
     }
 
 
