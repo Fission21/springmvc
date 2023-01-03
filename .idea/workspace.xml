@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="368d7063-16f0-483e-8ed8-bd51f6125c2e" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xm/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xm/controller/DateController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xm/demo/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xm/domain/User.java" afterDir="false" />
+    <list default="true" id="368d7063-16f0-483e-8ed8-bd51f6125c2e" name="变更" comment="这次更新，新增了json格式的传递，包括pojo json， list pojo json，还有日期格式的传递">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xm/controller/ResponsePageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xm/controller/RestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/page.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xm/config/ServletContainersInitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xm/config/ServletContainersInitConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xm/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xm/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xm/config/SpringMVCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xm/config/SpringMVCConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/xm/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xm/controller/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="Tag Library Descriptor" />
         <option value="spring-beans.schema" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -67,29 +62,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;0861095ca1565183975151c5b2a14071&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "spring.configuration.checksum": "0861095ca1565183975151c5b2a14071",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xm.config" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.com.xm.demo.App">
+  <component name="RunManager" selected="Maven.springmvc [tomcat7:run-war]">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xm.App" />
       <module name="springmvc" />
@@ -141,12 +136,6 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.com.xm.demo.App" />
-        <item itemvalue="应用程序.App" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -164,11 +153,29 @@
       <workItem from="1672378078248" duration="3464000" />
       <workItem from="1672381560160" duration="179000" />
       <workItem from="1672381746823" duration="749000" />
-      <workItem from="1672382549659" duration="315000" />
+      <workItem from="1672382549659" duration="1205000" />
+      <workItem from="1672643011461" duration="1393000" />
+      <workItem from="1672644415090" duration="3496000" />
+      <workItem from="1672713513329" duration="1427000" />
+      <workItem from="1672722927891" duration="432000" />
+      <workItem from="1672723371461" duration="534000" />
+      <workItem from="1672723911766" duration="2400000" />
     </task>
+    <task id="LOCAL-00001" summary="这次更新，新增了json格式的传递，包括pojo json， list pojo json，还有日期格式的传递">
+      <created>1672382939967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672382939967</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="这次更新，新增了json格式的传递，包括pojo json， list pojo json，还有日期格式的传递" />
+    <option name="LAST_COMMIT_MESSAGE" value="这次更新，新增了json格式的传递，包括pojo json， list pojo json，还有日期格式的传递" />
   </component>
 </project>
