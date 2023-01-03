@@ -1,39 +1,36 @@
 package com.xm.controller;
 
 import com.xm.domain.User;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
- * 最基础的Rest开发
+ * 开发中简化的REST书写方式
+ * @@RestController 注解 是‘@Controller’和’@ResponseBody‘的简写
+ *
  * @author john
  * @version 1.1
  */
 
-@Controller
-public class RestController {
+@RestController
+@RequestMapping("/src")
+public class SimpleRestController {
 
-
-    // REST中的save写法
-    // 保存
-    @RequestMapping(value = "/rests",method = RequestMethod.POST)
-    @ResponseBody
+    @PostMapping
     public String save(){
         System.out.println("user save ....." );
         return "{'module':'usr save'}";
     }
 
     // 删除
-    @RequestMapping(value = "/rests/{id}",method = RequestMethod.DELETE)
-    @ResponseBody
+    @DeleteMapping("/{id}")
     public String delete(@PathVariable Integer id){
         System.out.println("user delete ....." + id);
         return "{'module':'usr delete'}";
     }
 
     // 查询
-    @RequestMapping(value = "/rests/{id}",method = RequestMethod.GET)
-    @ResponseBody
+    @GetMapping("/{id}")
     public String getById(@PathVariable Integer id){
         System.out.println("user getByID ....." + id);
         return "{'module':'usr getByID'}";
@@ -41,8 +38,7 @@ public class RestController {
 
     // 修改
     // @RequestBody注解是Spring MVC用于将HTTP请求正文转换为Java对象的注解。
-    @RequestMapping(value = "/rests",method = RequestMethod.PUT)
-    @ResponseBody
+    @PutMapping
     public String update(@RequestBody User user){
         System.out.println("user update ....." + user);
         return "{'module':'usr update'}";
