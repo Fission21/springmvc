@@ -18,6 +18,7 @@ public class ServletContainersInitConfig extends AbstractAnnotationConfigDispatc
         return new Class[]{SpringMVCConfig.class};
     }
 
+    // 设置拦截所有带/的请求
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }

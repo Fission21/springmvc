@@ -4,10 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="368d7063-16f0-483e-8ed8-bd51f6125c2e" name="变更" comment="写了最基本的REST开发">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xm/controller/SimpleRestController.java" afterDir="false" />
+    <list default="true" id="368d7063-16f0-483e-8ed8-bd51f6125c2e" name="变更" comment="写了开发中简化的REST书写方式">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xm/config/SpringmvcSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xm/controller/JsonPojoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xm/domain/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/axios-0.18.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/books.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/elementui/fonts/element-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/elementui/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/elementui/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xm/controller/RestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xm/controller/RestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xm/config/ServletContainersInitConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xm/config/ServletContainersInitConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xm/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xm/controller/BookController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +85,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/13648/IdeaProjects/springmvc/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,6 +101,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\13648\IdeaProjects\springmvc\src\main\webapp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xm.config" />
     </key>
@@ -157,7 +183,8 @@
       <workItem from="1672713513329" duration="1427000" />
       <workItem from="1672722927891" duration="432000" />
       <workItem from="1672723371461" duration="534000" />
-      <workItem from="1672723911766" duration="3099000" />
+      <workItem from="1672723911766" duration="6143000" />
+      <workItem from="1672806143311" duration="1696000" />
     </task>
     <task id="LOCAL-00001" summary="这次更新，新增了json格式的传递，包括pojo json， list pojo json，还有日期格式的传递">
       <created>1672382939967</created>
@@ -173,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672726366693</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="写了开发中简化的REST书写方式">
+      <created>1672727367869</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672727367869</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +216,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="这次更新，新增了json格式的传递，包括pojo json， list pojo json，还有日期格式的传递" />
     <MESSAGE value="写了最基本的REST开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="写了最基本的REST开发" />
+    <MESSAGE value="写了开发中简化的REST书写方式" />
+    <option name="LAST_COMMIT_MESSAGE" value="写了开发中简化的REST书写方式" />
   </component>
 </project>
